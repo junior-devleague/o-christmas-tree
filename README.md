@@ -5,7 +5,7 @@ How lovely are thy branches
 O Christmas tree, o Christmas tree
 How lovely are thy branches!
 
-Let's decorate our own cozy place on the web with our very own Christmas tree using HTML's Drag and Drop.
+Let's decorate a cozy place on the web with our very own Christmas tree using HTML's Drag and Drop.
 
 ![Final Page Example](https://github.com/junior-devleague/o-christmas-tree/blob/master/assets/example.jpg)
 
@@ -69,7 +69,7 @@ To complete Part III, fulfill the following requirements:
 1. Target the ```body``` element.
 * Set its ```margin``` to 0.
 2. Target the ```id``` of "container".
-* Set the height to 100vh. vh stands for "view height". 100vh means that the width of the element will fit to the full height of the page.
+* Set the height to 100vh. vh stands for "view height". 100vh means that the height of the element will fit to the full height of the page.
 * Set the width to 100%.
 * Activate flex box! *Hint: The property starts with a d...*
 3. Target the ```id``` of "sidebar".
@@ -113,7 +113,7 @@ To complete Part III, fulfill the following requirements:
 * Activate flexbox!
 * Use flexbox to make horizontal space around the elements within it.
 * Center the items vertically with flexbox.
-* Set the box-shadow property to ```inset 0 0 10px #000000;```. This creates an inner black shadow.
+* Set the box-shadow property to ```inset 0 0 10px #000000;```. This creates an inner black shadow that helps users see that something needs to be dropped in here.
 11. Target the ```id``` of treepart1.
 * Set the height to 100px.
 * Set the width to 100px.
@@ -155,7 +155,7 @@ function drag(ev) {
   //more code goes in here!
 }
 ```
-This function will get information about the element we are holding and set that data type to "text" so we can drag it around. In your drag function, input the following code.
+This function will get information about the element we are holding and retrieve its ```id```.
 
 ``` JavaScript
 function drag(ev) {
@@ -163,7 +163,7 @@ function drag(ev) {
 }
 ```
 
-Since ```ev``` is a placeholder for our drag event, we will get information about the element being dragged (dataTransfer) when a drag is triggered. How do we know which element that is? Well, we will grab the ```id``` of our ev.target (the element that fires off the drag event) and set that to a text format so we can retrieve it later.
+Since ```ev``` is a placeholder for our drag event, we will get information about the element being dragged when a drag is triggered. How do we know which element that is? Well, we will grab the ```id``` of our ev.target (the element that fires off the drag event) and set that to a text data type so we can retrieve it later.
 
 2. Create a function called allowDrop that will take in an event as a parameter. By default, we cannot drag elements into other elements (try it!). So, we need to prevent the default functions from running. Fortunately, the event object already has a method called ```preventDefault()``` to help us with that. Call the preventDefault method from the event parameter. *Hint: How do we usually call methods from objects?*
 
@@ -173,6 +173,11 @@ Since ```ev``` is a placeholder for our drag event, we will get information abou
 
 Resource: https://www.w3schools.com/html/html5_draganddrop.asp
 
+### Part V JS
+
+To complete Part V, fulfill the following requirements:
+
+1. Create an Event Listener on your three gifts that will listen for a click. If you click on it, change the source of the image to an image of something you want for Christmas!
+
 ### Stretch Goals
-1. Create an Event Listener on your three gifts that will listen for a click. If you click on it, change the source of the image to an image of something you want for Christmas! 
-2. Create a button in your sidebar that will generate new ornaments to be added to our tree on click! These ornaments can be in the form of small, circular divs. *Hint: Use ```Event Listeners```, ```createElement```, and ```appendChild```.
+1. Create a button in your sidebar that will generate new ornaments to be added to our tree on click! These ornaments can be in the form of small, circular divs. *Hint: Use ```Event Listeners```, ```createElement```, and ```appendChild```.

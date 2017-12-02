@@ -81,6 +81,7 @@ To complete Part III, fulfill the following requirements:
 * Set a ```box-shadow``` property to ```0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);```.
 4. Target the ```id``` of "sidebar-title".
 * Set the width to 100%.
+* Set the height to 30px. 
 * Activate flex box!
 * Center it horizontally and vertically using flex box.
 * Give it a background color.

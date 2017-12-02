@@ -75,6 +75,10 @@ To complete Part III, fulfill the following requirements:
 3. Target the ```id``` of "sidebar".
 * Set the height to 100%.
 * Set the width to 450px.
+* Activate flexbox!
+* Set the direction of items to a column with flex box.
+* Center the items horizontally.
+* Set a ```box-shadow``` property to ```0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);```.
 4. Target the ```id``` of "sidebar-title".
 * Set the width to 100%.
 * Activate flex box!
